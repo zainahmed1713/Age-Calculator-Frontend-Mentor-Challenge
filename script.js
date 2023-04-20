@@ -11,7 +11,7 @@ calculate = () => {
     else if (month > 12)
         alert('Enter a valid month');
     else {
-        const birthdate = new Date(year, month, day);
+        const birthdate = new Date(year, month - 1, day);
         const currentDate = new Date();
 
         //Calculting time difference
