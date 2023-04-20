@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Age Calculator App</title>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <form>
+        <label for="day" class="day-label">Day</label>
+        <label for="month" class="month-label">Month</label>
+        <label for="year">Year</label><br>
+        <input type="text" name="day" id="day" required>
+        <input type="text" name="month" id="month" required>
+        <input type="text" name="year" id="year" required>
+      </form>
+      <hr><img src="./assets/images/icon-arrow.svg" alt="image" onclick="calculate()">
+      <div class="counter">
+        <h2><span class="numbers year">--</span> years</h2>
+        <h2><span class="numbers month">--</span> months</h2>
+        <h2><span class="numbers day">--</span> days</h2>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
